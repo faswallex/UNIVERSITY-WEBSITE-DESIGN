@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewpoint" content="with=device-width, initial-scale=1.0" />
     <title>University Website Design</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"
-<link href="https://fonts.googleapis.com/css2?
-family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
-</head>
-<body>    
-<section class="header">
- <nav>
-     <a href="index.html"><img src="images/logo.png"></a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">COURSE</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </div>
-</nav>
-<div class="text-box">
-    <h1>World's Biggest University</h1>
-    <p>Making website is now one of the essiest thing in the world. You just need to learn HTNL, CSS, Javascript and you are good to go.</p>
-     <a href="">Visit Us To Know More</a>
-</div>  
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-</section>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     
-</body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="menu_buttons">
+          <i class="fa fa-times close-icon" onclick="hideMenu()"></i>
+          <i class="fa fa-bars menu-icon" onclick="showMenu()"></i>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Making website is now one of the essiest thing in the world. You just
+          need to learn HTML, CSS,<br />Javascript and you are good to go.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+
+    </section>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      const closeIcon = document.querySelector(".close-icon");
+      const menuIcon = document.querySelector(".menu-icon");
+      function showMenu() {
+        navLinks.style.right = "0";
+        closeIcon.style.right = "0";
+      }
+      function hideMenu() {
+        closeIcon.style.right = "-200px";
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
+
+
